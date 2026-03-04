@@ -10,15 +10,20 @@ Dieses Dokument beschreibt, wie das Backup- und Restore-System auf einem Raspber
 1. Ordnerstruktur erstellen
 
 cd ~
+
 mkdir -p imager
+
 cd imager
 
 Die Struktur sollte danach wie folgt aussehen:
 
 ~/imager/
-├── imager.sh         # Backup-Skript
-├── restorer.sh       # Restore-Skript
-└── PiShrink/         # PiShrink-Skript von GitHub
+
+  ├── imager.sh         # Backup-Skript
+
+  ├── restorer.sh       # Restore-Skript
+
+  └── PiShrink/         # PiShrink-Skript von GitHub
 
 ---
 
@@ -46,9 +51,11 @@ chmod +x ~/imager/*.sh
 
 sudo mkdir -p /mnt/usb
 
+
 3. Optional: Unterordner für Backups erstellen:
 
 sudo mkdir -p /mnt/usb/arbeits-pi
+
 sudo chown pi:pi /mnt/usb/arbeits-pi
 
 Hinweis: Die Skripte erkennen automatisch vorhandene Ordner, der Ordner „Dateien“ wird ignoriert.
@@ -123,9 +130,12 @@ cd ~/imager
 4. Beispielhafte Ordnerstruktur auf der HDD
 
 /mnt/usb/
+
 └── arbeits-pi/
-    ├── backup_2026-03-04_07-29.img.gz
-    └── backup_2026-03-10_08-15.img.gz
+
+  ├── backup_2026-03-04_07-29.img.gz  
+  
+  └── backup_2026-03-10_08-15.img.gz
 
 - SD-Karte über USB-Kartenleser anschließen.
 - USB-HDD anschließen.
