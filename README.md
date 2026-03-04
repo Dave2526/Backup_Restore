@@ -29,7 +29,7 @@ Die Struktur sollte danach wie folgt aussehen:
 
 2. PiShrink / Abhängikeiten installieren
 
-sudo apt install pv git
+sudo apt install git
 
 PiShrink wird über GitHub geklont:
 
